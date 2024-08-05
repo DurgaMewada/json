@@ -1,7 +1,38 @@
-# json
+# Json Parsing
 
-A new Flutter project.
+## JSON 
+JSON (JavaScript Object Notation) is a lightweight data-interchange format that is easy for humans to read and write and easy for machines to parse and generate. It is commonly used to transmit data between a server and a web application as text.
 
+## JSON Parsing
+JSON Parsing refers to the process of converting JSON data into a usable format in a programming language, typically into objects or data structures that can be manipulated and used within the application. This involves reading JSON data, interpreting its structure, and mapping it to appropriate data types in the programming environment.
+
+# 8.1 What is JSON & JSON Parsing ?
+<div> 
+  <img src = "https://github.com/user-attachments/assets/407ea108-714b-40e7-9b53-53a8e6468b91"  height=35% width=22%  />
+</div>
+
+# 8.2 Json Data parsing Nested Map Format
+
+When dealing with JSON data that contains nested maps, you often need to access deeply nested values. In Flutter, you can parse such JSON data using the jsonDecode function and then traverse the map to retrieve the desired values.
+
+#### Example
+```
+{
+  "user": {
+    "id": 1,
+    "name": "John Doe",
+    "address": {
+      "street": "123 Main St",
+      "city": "Springfield",
+      "zipcode": "12345"
+    }
+  }
+}
+```
+
+<div> 
+  <img src = "https://github.com/user-attachments/assets/4355b249-f3ea-4d4e-9c5d-9f9414d870b7"  height=35% width=22%  />
+</div>
 ## Getting Started
 
 This project is a starting point for a Flutter application.

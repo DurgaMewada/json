@@ -25,22 +25,21 @@ class Photosfromjson extends StatelessWidget {
         body:  ListView.builder(
           itemCount: photoProvider.listOfPhoto.length,
           itemBuilder: (context, index) => ListTile(
-            leading: Container(
+            leading: Text(photoProvider.listOfPhoto[index].id.toString(),style: TextStyle(fontSize: 18),),
+            title: Text(photoProvider.listOfPhoto[index].title,style: TextStyle(fontSize: 15),),
+            trailing: Container(
               height: 50,
               width: 50,
               decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: NetworkImage(
-                    photoProvider.listOfPhoto[index].url,
+                  image: DecorationImage(
+                      image: NetworkImage(
+                        photoProvider.listOfPhoto[index].url,
+                      )
                   )
-                )
               ),
             ),
-            title: Text(photoProvider.listOfPhoto[index].title),
-            trailing:  Text(photoProvider.listOfPhoto[index].id.toString()),
           ),
         ),
-
          );
   }
 }

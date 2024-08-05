@@ -15,20 +15,6 @@ JSON Parsing refers to the process of converting JSON data into a usable format 
 
 When dealing with JSON data that contains nested maps, you often need to access deeply nested values. In Flutter, you can parse such JSON data using the jsonDecode function and then traverse the map to retrieve the desired values.
 
-#### Example
-```
-{
-  "user": {
-    "id": 1,
-    "name": "John Doe",
-    "address": {
-      "street": "123 Main St",
-      "city": "Springfield",
-      "zipcode": "12345"
-    }
-  }
-}
-```
 <div> 
   <img src = "https://github.com/user-attachments/assets/4355b249-f3ea-4d4e-9c5d-9f9414d870b7"  height=35% width=22%  />
 </div>
